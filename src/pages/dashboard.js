@@ -22,9 +22,9 @@ const IndexPage = () => (
       icon1label="Dashboard"
       icon2label="Check In"
       icon3label="Learn"
-      icon1link="/dashboard"
-      icon2link="/shape"
-      icon3link="/learn"
+      icon1link="/shape"
+      icon2link="/color"
+      icon3link="/sticker"
     />
   
   
