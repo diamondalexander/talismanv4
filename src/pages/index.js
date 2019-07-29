@@ -1,6 +1,7 @@
 import React from "react";
 import '../components/IndexPage.css';
 import BottomNav from "../components/BottomNav";
+import BlobShape from "../components/BlobShape";
 // import { Link } from "gatsby"
 
 // import Layout from "../components/layout"
@@ -8,8 +9,19 @@ import BottomNav from "../components/BottomNav";
 // import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <div className="app">Hello World
-    <BottomNav />
+  <div className="app">
+    <BlobShape />
+    <BottomNav 
+      icon1= {<img src={require('../images/dash.svg')} id="dash" alt="bubble chart icon" />}
+      icon2= {<img src={require('../images/checkin.svg')} alt="circle icon" />}
+      icon3= {<img src={require('../images/learn.svg')} alt="book icon"/>}
+      icon1label="Dashboard"
+      icon2label="Check In"
+      icon3label="Learn"
+      icon1link="/shape"
+      icon2link="/color"
+      icon3link="/sticker"
+    />
   
   
   
