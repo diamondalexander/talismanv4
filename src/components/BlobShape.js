@@ -4,7 +4,7 @@ import './BlobShape.css';
 const BlobShape = (props) => (
   <div id="svg-container">
         <svg id="blob-shape" version="1.1" xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 800 800"  style={props.svgstyle} width="600" height="600">
+        viewBox="0 0 800 800"  style={props.svgstyle} width="500" height="500">
           <filter id="f1">
             <feDropShadow dx="3" dy="3" stdDeviation="10" style={props.filterstyle} />
             {/* <feFlood flood-color="#eee" flood-opacity="0.3" x="0" y="0" width="200" height="200" /> */}

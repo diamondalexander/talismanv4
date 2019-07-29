@@ -5,6 +5,11 @@
   top: 200px;
 } */
 
+#blob-shape {
+  margin: 100px auto;
+  display: block;
+}
+
 #mood {
   margin: 0 auto;
 }
