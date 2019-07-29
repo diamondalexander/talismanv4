@@ -6,7 +6,8 @@ body {
 
 .app {
   width: 768px;
-  min-height: 800px;
+  min-height: 700px;
+  height: auto;
   margin: 0 auto;
 }
 
