@@ -1,0 +1,21 @@
+.nav-container {
+  height: 85px;
+  width: 768px;
+  position: absolute;
+  top: 1024px;
+  z-index: 1;
+  background: #fff;
+  border-top: 1px solid #c4c4c4;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+}
+
