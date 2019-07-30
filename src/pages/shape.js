@@ -7,10 +7,10 @@ const Shape = () => (
     <BlobShape
       shapestyle={{filter: 'url(#f1)'}}
     />
-    
+
     <BottomNav
       id="ci-controls" 
-      icon1= {<img src={require('../images/shape.svg')} alt="circle icon for shape options" />}
+      icon1= {<img src={require('../images/shape-active.svg')} alt="circle icon for shape options" />}
       icon2= {<img src={require('../images/color.svg')} alt="color drop icon for color options" />}
       icon3= {<img src={require('../images/sticker.svg')} alt="sticker icon for sticker options"/>}
       icon1link="/shape"

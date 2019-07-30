@@ -5,7 +5,7 @@ const BottomNav = (props) => (
   <div className="nav-container">
     <div className="icons-container" id={props.id}>
       <div className="icon" onClick={props.link1}>
-        <a href={props.icon3link}>
+        <a href={props.icon1link}>
           {props.icon1}
           <p>{props.icon1label}</p>
         </a>
