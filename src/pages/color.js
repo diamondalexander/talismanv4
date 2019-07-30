@@ -18,7 +18,7 @@ const BottomNav = (props) => (
         </a>
       </div>
       <div className="icon" onClick={showGrid}>
-          {props.icon2}
+          <img src={require('../images/color-active.svg')} id="drop" />
           <p>{props.icon2label}</p>
       </div>
       <div className="icon">
