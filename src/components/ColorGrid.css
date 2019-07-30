@@ -4,10 +4,13 @@
 
 .color-row {
   margin: -100px auto 0px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 40px;
-  justify-items: center;
+  display: flex;
+  /* flex-direction: row; */
+  /* display: grid; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-row-gap: 40px;
+  grid-template-rows: 50px; */
+  justify-content: space-between;
   width: 500px;
   padding: 30px 0px;
   border: 1px solid #eee;
@@ -17,8 +20,8 @@
   bottom: 125px; */
 
   background-color: #fdfdfd;
-  height: 110px;
-  overflow: auto;
+  height: 100px;
+  overflow-x: auto;
 }
 
 .pots {
