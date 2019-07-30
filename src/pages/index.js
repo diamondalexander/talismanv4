@@ -10,11 +10,14 @@ import BlobShape from "../components/BlobShape";
 
 const IndexPage = () => (
   <div className="app">
+    <a href="/shape">
     <BlobShape 
       svgstyle={{enableBackground: 'new 0 0 800 800'}}
       filterstyle={{floodColor: '#000000', floodOpacity: '0.4'}}
       shapestyle={{fill: '#BDBDBD', filter: 'url(#f1)'}}
     />
+    </a>
+
     <BottomNav 
       icon1= {<img src={require('../images/dash.svg')} id="dash" alt="bubble chart icon" />}
       icon2= {<img src={require('../images/checkin.svg')} alt="circle icon" />}
