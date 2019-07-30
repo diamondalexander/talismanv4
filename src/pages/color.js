@@ -5,7 +5,7 @@ import ColorGrid from '../components/ColorGrid';
 
 function showGrid() {
   var grid = document.getElementById('grid');
-  grid.classList.toggle('hidden');
+  grid.classList.add('hidden');
 }
 
 const BottomNav = (props) => (
@@ -57,7 +57,7 @@ const Color = () => (
       icon3link="/sticker"
     /> */}
 
-    <div id="grid" className="hidden">
+    <div id="grid">
       <ColorGrid />
     </div>
   </div>
