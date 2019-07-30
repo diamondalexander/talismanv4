@@ -5,8 +5,9 @@ import BlobShape from '../components/BlobShape';
 const Sticker = () => (
   <div className="app">
     <BlobShape
-      color={{}}
+      shapestyle={{filter: 'url(#f1)'}}
     />
+    
     <BottomNav
       id="ci-controls" 
       icon1= {<img src={require('../images/shape.svg')} alt="circle icon for shape options" />}

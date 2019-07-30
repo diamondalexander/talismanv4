@@ -5,7 +5,7 @@ import ColorGrid from '../components/ColorGrid';
 
 function showGrid() {
   var grid = document.getElementById('grid');
-  grid.classList.add('hidden');
+  grid.classList.toggle('hidden');
 }
 
 const BottomNav = (props) => (
