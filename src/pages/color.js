@@ -35,7 +35,6 @@ const Color = () => (
   <div className="app">
     <BlobShape
       shapestyle={{filter: 'url(#f1)'}}
-      fill="#BDBDBD"
     />
 
     <BottomNav 

@@ -5,61 +5,24 @@
 .color-row {
   margin: 50px auto 0px;
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 40px;
   justify-items: center;
   background: #fff;
-  width: 373px;
+  width: 768px;
   padding: 30px 0px;
   border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
   position: absolute;
-  bottom: 0;
+  bottom: 125px;
+  background-color: #fdfdfd;
+  height: 100px;
+  overflow: auto;
 }
 
-#swatch1 {
+.pots {
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  border: 3px solid #eee;
-  background: red;
-}
-
-#swatch2 {
-  width: 40px;
-  height: 40px;
-  background: blue;
-  border-radius: 100%;
-  border: 3px solid #eee;
-}
-
-#swatch3 {
-  width: 40px;
-  height: 40px;
-  background: yellow;
-  border-radius: 100%;
-  border: 3px solid #eee;
-}
-
-#swatch4 {
-  width: 40px;
-  height: 40px;
-  background: green;
-  border-radius: 100%;
-  border: 3px solid #eee;
-}
-
-#swatch5 {
-  width: 40px;
-  height: 40px;
-  background: pink;
-  border-radius: 100%;
-  border: 3px solid #eee;
-}
-
-#swatch6 {
-  width: 40px;
-  height: 40px;
-  background: orange;
-  border-radius: 100%;
-  border: 3px solid #eee;
+  border: 1px solid #eee;
 }
