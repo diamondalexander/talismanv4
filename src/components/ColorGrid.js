@@ -1,23 +1,16 @@
 import React from 'react';
-import './ColorGrid.css';
+import './grid.css';
 
-function changeColor() {
-var swatches = document.getElementsByClassName('pots');
-for (var i = 0; i < swatches.length; i++) {    
-    swatches[i].addEventListener('click', ((j) => {         
-    return function() {
-      var color = swatches[j].style.backgroundColor;
-      console.log(color);
-      document.getElementById('mood').style.fill = color;
-    }
-  })(i))
-}
+function close(){
+  var colorGrid = document.getElementById('color-grid');
+  colorGrid.classList.toggle('hidden');
 }
 
 const ColorGrid = () => (
 
-  <div className="color-container">
-    <div id="color-row">
+  <div className="container">
+   <div><p id="close" onClick={close}>X Close</p></div>
+    <div id="grid-row">
       <button id="swatch1" className="pots" style={{backgroundColor: '#EFE2AB'}}></button>
       <button id="swatch2" className="pots" style={{backgroundColor: '#E27B67'}}></button>
       <button id="swatch3" className="pots" style={{backgroundColor: '#915249'}}></button>

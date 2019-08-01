@@ -1,34 +1,23 @@
 import React from 'react';
-import './ShapeGrid.css';
+import './grid.css';
 
-function changeColor() {
-var swatches = document.getElementsByClassName('pots');
-for (var i = 0; i < swatches.length; i++) {    
-    swatches[i].addEventListener('click', ((j) => {         
-    return function() {
-      var color = swatches[j].style.backgroundColor;
-      console.log(color);
-      document.getElementById('mood').style.fill = color;
-    }
-  })(i))
-}
+function close(){
+  var shapeGrid = document.getElementById('shape-grid');
+  shapeGrid.classList.toggle('hidden');
 }
 
-const ColorGrid = () => (
 
-  <div className="color-container">
-    <div id="color-row">
-      <button id="swatch1" className="pots" style={{backgroundColor: '#EFE2AB'}}></button>
-      <button id="swatch2" className="pots" style={{backgroundColor: '#E27B67'}}></button>
-      <button id="swatch3" className="pots" style={{backgroundColor: '#915249'}}></button>
-      <button id="swatch4" className="pots" style={{backgroundColor: '#6E4870'}}></button>
-      <button id="swatch5" className="pots" style={{backgroundColor: '#B785BA'}}></button>
-      <button id="swatch6" className="pots" style={{backgroundColor: '#405865'}}></button>
-      <button id="swatch7" className="pots" style={{backgroundColor: '#8EB5B5'}}></button>
-      <button id="swatch8" className="pots" style={{backgroundColor: '#437048'}}></button>
-      <button id="swatch9" className="pots" style={{backgroundColor: '#60965E'}}></button>
+const ShapeGrid = () => (
+
+  <div className="container">
+    <div><p id="close" onClick={close}>X Close</p></div>
+    <div id="grid-row">
+      <div className="svgs">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 347.2 337.68"><path d="M176.06,64.78,232.59,1.47A4.33,4.33,0,0,1,240,5.37L223.55,73.52a4.34,4.34,0,0,0,5.26,5.23L312.26,58a4.33,4.33,0,0,1,3.86,7.5L266.38,108a4.33,4.33,0,0,0,2.88,7.63l73.52-1.22a4.33,4.33,0,0,1,2.18,8.12l-68,37.78a4.34,4.34,0,0,0,0,7.58l68,37.77a4.33,4.33,0,0,1-2.18,8.12L265,212.48a4.33,4.33,0,0,0-3.79,6.56l40,66.71a4.34,4.34,0,0,1-6,5.95l-59.22-35.52a4.34,4.34,0,0,0-6,5.87l25.68,45.08a4.33,4.33,0,0,1-6.22,5.72l-72-49.53a4.34,4.34,0,0,0-6.25,1.47L132,335.44a4.34,4.34,0,0,1-8.13-2.18l1.31-79.11a4.33,4.33,0,0,0-5.92-4.1l-38.73,15.2a4.33,4.33,0,0,1-5.71-5.35l13.3-41.8a4.33,4.33,0,0,0-4.2-5.65L4.41,213.76a4.33,4.33,0,0,1-2.17-8.12l68-37.77a4.34,4.34,0,0,0,0-7.58l-68-37.78a4.33,4.33,0,0,1,2.17-8.12l77.78,1.29A4.33,4.33,0,0,0,86,109.12L46,42.4a4.33,4.33,0,0,1,5.94-5.94L116.13,75a4.33,4.33,0,0,0,6.41-4.84L114,38.38a4.34,4.34,0,0,1,6.52-4.78l50,31.95A4.33,4.33,0,0,0,176.06,64.78Z" style={{fill:' #bdbdbd'}}/></svg>
+      </div>
+      {/* <button id="swatch6" className="shape" style={{backgroundColor: '#405865'}}></button> */}
     </div>
   </div>
 )
 
-export default ColorGrid;
+export default ShapeGrid;

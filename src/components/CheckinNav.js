@@ -3,16 +3,17 @@ import './BottomNav.css';
 
 
 function showShapes() {
-  var grid = document.getElementById('shape-grid');
-  grid.classList.toggle('hidden');
+  var shapeGrid = document.getElementById('shape-grid');
+  shapeGrid.classList.toggle('hidden');
 
-  var swatches = document.getElementsByClassName('pots');
-  for (var i = 0; i < swatches.length; i++) {    
-      swatches[i].addEventListener('click', ((j) => {         
+  var shapes = document.getElementsByClassName('shape');
+  // var svg = document.getElementById('mood').getAttribute('d');
+  for (var i = 0; i < shapes.length; i++) {    
+      shapes[i].addEventListener('click', ((j) => {         
       return function() {
-        var color = swatches[j].style.backgroundColor;
-        console.log(color);
-        document.getElementById('mood').style.fill = color;
+        var paths = shapes[j].getAttribute('d');
+        console.log(paths);
+        // document.getElementById('mood').style.fill = color;
       }
     })(i))
   }
