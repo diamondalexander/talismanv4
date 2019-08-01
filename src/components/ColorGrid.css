@@ -2,7 +2,7 @@
   display: none;
 }
 
-.color-row {
+#color-row {
   margin: -100px auto 0px;
   display: flex;
   /* flex-direction: row; */

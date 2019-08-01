@@ -2,11 +2,12 @@ import React from 'react';
 import BottomNav from '../components/BottomNav';
 import BlobShape from '../components/BlobShape';
 
+
+
+
 const Shape = () => (
   <div className="app">
-    <BlobShape
-      shapestyle={{filter: 'url(#f1)'}}
-    />
+    <BlobShape />
 
     <BottomNav
       id="ci-controls" 

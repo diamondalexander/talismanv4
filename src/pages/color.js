@@ -8,6 +8,7 @@ function showGrid() {
   grid.classList.toggle('hidden');
 }
 
+
 const BottomNav = (props) => (
   <div className="nav-container">
     <div className="icons-container" id={props.id}>
@@ -18,7 +19,7 @@ const BottomNav = (props) => (
         </a>
       </div>
       <div className="icon" onClick={showGrid}>
-          <img src={require('../images/color-active.svg')} id="drop" />
+          <img src={require('../images/color-active.svg')} />
           <p>{props.icon2label}</p>
       </div>
       <div className="icon">
@@ -33,9 +34,7 @@ const BottomNav = (props) => (
 
 const Color = () => (
   <div className="app">
-    <BlobShape
-      shapestyle={{filter: 'url(#f1)'}}
-    />
+    <BlobShape />
 
     <BottomNav 
       id="ci-controls" 
