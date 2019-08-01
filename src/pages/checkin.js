@@ -49,7 +49,7 @@ const Checkin = () => (
     <div id="overlay">
       <div className="start-content">
         <h1>Create your first check-in!</h1>
-        <button id="start">Press to start</button>
+        <button id="start" onClick={initFunctions}>Press to start</button>
       </div>
       </div>
     <BlobShape />
