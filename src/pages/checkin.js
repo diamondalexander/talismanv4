@@ -4,36 +4,41 @@ import BlobShape from '../components/BlobShape';
 import ColorGrid from '../components/ColorGrid';
 import '../components/Checkin.css';
 
+function initFunctions() {
 
-function showShapes() {
-  var grid = document.getElementById('grid');
-  grid.classList.toggle('hidden');
+  var overlay = document.getElementById('overlay');
+  overlay.classList.add('hidden');
 
-  var swatches = document.getElementsByClassName('pots');
-  for (var i = 0; i < swatches.length; i++) {    
-      swatches[i].addEventListener('click', ((j) => {         
-      return function() {
-        var color = swatches[j].style.backgroundColor;
-        console.log(color);
-        document.getElementById('mood').style.fill = color;
-      }
-    })(i))
+  function showShapes() {
+    var grid = document.getElementById('grid');
+    grid.classList.toggle('hidden');
+  
+    var swatches = document.getElementsByClassName('pots');
+    for (var i = 0; i < swatches.length; i++) {    
+        swatches[i].addEventListener('click', ((j) => {         
+        return function() {
+          var color = swatches[j].style.backgroundColor;
+          console.log(color);
+          document.getElementById('mood').style.fill = color;
+        }
+      })(i))
+    }
   }
-}
-
-function showColors() {
-  var grid = document.getElementById('grid');
-  grid.classList.toggle('hidden');
-
-  var swatches = document.getElementsByClassName('pots');
-  for (var i = 0; i < swatches.length; i++) {    
-      swatches[i].addEventListener('click', ((j) => {         
-      return function() {
-        var color = swatches[j].style.backgroundColor;
-        console.log(color);
-        document.getElementById('mood').style.fill = color;
-      }
-    })(i))
+  
+  function showColors() {
+    var grid = document.getElementById('grid');
+    grid.classList.toggle('hidden');
+  
+    var swatches = document.getElementsByClassName('pots');
+    for (var i = 0; i < swatches.length; i++) {    
+        swatches[i].addEventListener('click', ((j) => {         
+        return function() {
+          var color = swatches[j].style.backgroundColor;
+          console.log(color);
+          document.getElementById('mood').style.fill = color;
+        }
+      })(i))
+    }
   }
 }
 
@@ -41,7 +46,7 @@ function showColors() {
 
 const Checkin = () => (
   <div className="app">
-    <div className="overlay">
+    <div id="overlay">
       <div className="start-content">
         <h1>Create your first check-in!</h1>
         <button id="start">Press to start</button>
