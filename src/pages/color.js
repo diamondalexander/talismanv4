@@ -6,8 +6,18 @@ import ColorGrid from '../components/ColorGrid';
 function showGrid() {
   var grid = document.getElementById('grid');
   grid.classList.toggle('hidden');
-}
 
+  var swatches = document.getElementsByClassName('pots');
+  for (var i = 0; i < swatches.length; i++) {    
+      swatches[i].addEventListener('click', ((j) => {         
+      return function() {
+        var color = swatches[j].style.backgroundColor;
+        console.log(color);
+        document.getElementById('mood').style.fill = color;
+      }
+    })(i))
+  }
+}
 
 const BottomNav = (props) => (
   <div className="nav-container">

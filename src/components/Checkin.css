@@ -1,0 +1,15 @@
+.start-content {
+  width: 768px;
+  margin: 0 auto;
+  position: absolute;
+  top: 400px;
+}
+
+.start-content h1 {
+  text-align: center;
+}
+
+#start {
+  display: block;
+  margin: 0 auto;
+}

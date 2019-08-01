@@ -17,7 +17,7 @@ for (var i = 0; i < swatches.length; i++) {
 const ColorGrid = () => (
 
   <div className="color-container">
-    <div id="color-row" onClick={changeColor}>
+    <div id="color-row">
       <button id="swatch1" className="pots" style={{backgroundColor: '#EFE2AB'}}></button>
       <button id="swatch2" className="pots" style={{backgroundColor: '#E27B67'}}></button>
       <button id="swatch3" className="pots" style={{backgroundColor: '#915249'}}></button>
