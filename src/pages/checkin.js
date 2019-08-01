@@ -1,48 +1,15 @@
 import React from 'react';
-import BottomNav from '../components/BottomNav';
 import BlobShape from '../components/BlobShape';
+import ShapeGrid from '../components/ShapeGrid';
 import ColorGrid from '../components/ColorGrid';
+import StickerGrid from '../components/StickerGrid';
 import '../components/Checkin.css';
+import CheckinNav from '../components/CheckinNav';
 
 function initFunctions() {
-
   var overlay = document.getElementById('overlay');
   overlay.classList.add('hidden');
-
-  function showShapes() {
-    var grid = document.getElementById('grid');
-    grid.classList.toggle('hidden');
-  
-    var swatches = document.getElementsByClassName('pots');
-    for (var i = 0; i < swatches.length; i++) {    
-        swatches[i].addEventListener('click', ((j) => {         
-        return function() {
-          var color = swatches[j].style.backgroundColor;
-          console.log(color);
-          document.getElementById('mood').style.fill = color;
-        }
-      })(i))
-    }
-  }
-  
-  function showColors() {
-    var grid = document.getElementById('grid');
-    grid.classList.toggle('hidden');
-  
-    var swatches = document.getElementsByClassName('pots');
-    for (var i = 0; i < swatches.length; i++) {    
-        swatches[i].addEventListener('click', ((j) => {         
-        return function() {
-          var color = swatches[j].style.backgroundColor;
-          console.log(color);
-          document.getElementById('mood').style.fill = color;
-        }
-      })(i))
-    }
-  }
 }
-
-
 
 const Checkin = () => (
   <div className="app">
@@ -52,17 +19,18 @@ const Checkin = () => (
         <button id="start" onClick={initFunctions}>Press to start</button>
       </div>
       </div>
-    <BlobShape />
 
-    <BottomNav
-        id="ci-controls" 
-        icon1= {<img src={require('../images/shape-active.svg')} alt="circle icon for shape options" />}
-        icon2= {<img src={require('../images/color.svg')} alt="color drop icon for color options" />}
-        icon3= {<img src={require('../images/sticker.svg')} alt="sticker icon for sticker options"/>}
-        icon1link="/shape"
-        icon2link="/color"
-        icon3link="/sticker"
-      />
+    <BlobShape />
+    <CheckinNav />
+    <div id="shape-grid" className="hidden">
+      <ShapeGrid />
+    </div>
+    <div id="color-grid" className="hidden">
+      <ColorGrid />
+    </div>
+    <div id="sticker-grid" className="hidden">
+      <StickerGrid />
+    </div>
   </div>
 )
 
