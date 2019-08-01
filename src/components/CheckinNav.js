@@ -5,18 +5,6 @@ import './BottomNav.css';
 function showShapes() {
   var shapeGrid = document.getElementById('shape-grid');
   shapeGrid.classList.toggle('hidden');
-
-  var shapes = document.getElementsByClassName('shape');
-  // var svg = document.getElementById('mood').getAttribute('d');
-  for (var i = 0; i < shapes.length; i++) {    
-      shapes[i].addEventListener('click', ((j) => {         
-      return function() {
-        var paths = shapes[j].getAttribute('d');
-        console.log(paths);
-        // document.getElementById('mood').style.fill = color;
-      }
-    })(i))
-  }
 }
 
 function showColors() {

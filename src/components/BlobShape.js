@@ -1,7 +1,7 @@
 import React from 'react';
 import './BlobShape.css';
 
-const BlobShape = (props) => (
+const BlobShape = () => (
   <div id="svg-container">
         <svg id="blob-shape" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="500" height="500">
           <path id="mood" d="M339,143.48c13.94,36.9,3.89,72.29-1.15,90.07-4.06,14.31-22.71,80-81.28,105.39-70.07,30.34-164.31-11.36-195.46-82.43-22.75-51.88-4.27-102-1-110.51,2.75-7.13,25.28-62.87,83.42-84.95C219.05,32.36,313.52,76.18,339,143.48Z" style={{fill: '#bdbdbd'}}/>
