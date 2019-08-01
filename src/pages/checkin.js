@@ -4,6 +4,7 @@ import BlobShape from '../components/BlobShape';
 import ColorGrid from '../components/ColorGrid';
 import '../components/Checkin.css';
 
+
 function showShapes() {
   var grid = document.getElementById('grid');
   grid.classList.toggle('hidden');
