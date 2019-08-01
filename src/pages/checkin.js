@@ -46,7 +46,7 @@ const Checkin = () => (
         <h1>Create your first check-in!</h1>
         <button id="start">Press to start</button>
       </div>
-    </div>
+      </div>
     <BlobShape />
 
     <BottomNav
