@@ -55,13 +55,13 @@ function showStickers() {
 const CheckinNav = (props) => (
   <div className="nav-container">
     <div className="icons-container" id="ci-controls">
-      <div className="icon" onClick={showShapes}>
+      <div className="icon" onClick={showShapes} id="shape">
         <img src={require('../images/shape.svg')} alt="circle icon for shape options" />
       </div>
-      <div className="icon" onClick={showColors}>
+      <div className="icon" onClick={showColors} id="color">
         <img src={require('../images/color.svg')} alt="color drop icon for color options" />
       </div>
-      <div className="icon" onClick={showStickers}>
+      <div className="icon" onClick={showStickers} id="sticker">
         <img src={require('../images/sticker.svg')} alt="sticker icon for sticker options"/>
       </div>
     </div>
