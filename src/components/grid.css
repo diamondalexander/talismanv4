@@ -24,6 +24,20 @@
   overflow-x: auto;
 }
 
+.sticker-titles {
+  flex-basis: 100%;
+}
+
+.faces {
+  display: flex;
+}
+
+.faces img {
+  display: block;
+  height: 60px;
+  padding: 0px 25px;
+}
+
 .pots {
   width: 40px;
   height: 40px;
