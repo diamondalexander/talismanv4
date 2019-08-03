@@ -13,6 +13,8 @@ export default function HTML(props) {
         />
         {props.headComponents}
         <link rel="stylesheet" href="https://use.typekit.net/ypq4uvy.css" />
+        {/* <script src="https://kit.fontawesome.com/598e931411.js"></script> */}
+        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css" />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}

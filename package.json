@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@shopify/draggable": "^1.0.0-beta.8",
     "gatsby": "^2.13.42",
     "gatsby-image": "^2.2.7",
     "gatsby-plugin-manifest": "^2.2.4",

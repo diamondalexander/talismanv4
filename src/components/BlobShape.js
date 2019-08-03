@@ -1,6 +1,7 @@
 import React from 'react';
 import './BlobShape.css';
 
+
 const BlobShape = () => (
   <div id="svg-container">
         <svg id="blob-shape" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="500" height="500">
