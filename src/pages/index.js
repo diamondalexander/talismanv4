@@ -6,6 +6,22 @@ import ColorGrid from '../components/ColorGrid';
 import '../components/Checkin.css';
 import CheckinNav from '../components/CheckinNav';
 import interact from 'interactjs';
+const position = { x: 0, y: 0 }
+
+interact('.draggable').draggable({
+  listeners: {
+    start (event) {
+      console.log(event.type, event.target)
+    },
+    move (event) {
+      position.x += event.dx
+      position.y += event.dy
+
+      event.target.style.transform =
+        `translate(${position.x}px, ${position.y}px)`
+    },
+  }
+})
 
 
 function initFunctions() {
@@ -55,17 +71,5 @@ const Checkin = () => (
     </div>
 )
 
-interact('.draggable')
-  .draggable({
-    // enable inertial throwing
-    inertia: true,
-    // keep the element within the area of it's parent
-    modifiers: [
-      interact.modifiers.restrictRect({
-        restriction: 'parent',
-        endOnly: true
-      })
-    ]
-  });
 
 export default Checkin;

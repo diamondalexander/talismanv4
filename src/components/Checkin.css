@@ -53,3 +53,8 @@ body {
 .hidden {
   display: none!important;
 }
+
+.draggable {
+  touch-action: none;
+  user-select: none;
+}
