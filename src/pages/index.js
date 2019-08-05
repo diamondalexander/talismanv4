@@ -7,24 +7,6 @@ import '../components/Checkin.css';
 import CheckinNav from '../components/CheckinNav';
 import interact from 'interactjs';
 
-document.addEventListener("DOMContentLoaded", function(event) {
-interact('.draggable').draggable({
-  listeners: {
-    start (event) {
-      console.log(event.type, event.target)
-    },
-    move (event) {
-      position.x += event.dx
-      position.y += event.dy
-
-      event.target.style.transform =
-        `translate(${position.x}px, ${position.y}px)`
-    }
-  }
-})
-});
-
-
 function initFunctions() {
   var overlay = document.getElementById('overlay');
   overlay.classList.add('hidden');
