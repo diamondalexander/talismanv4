@@ -7,9 +7,8 @@ import '../components/Checkin.css';
 import CheckinNav from '../components/CheckinNav';
 import interact from 'interactjs';
 
-const sticker = interact('.draggable');
-const position = { x: 0, y: 0 }
-sticker.draggable({
+document.addEventListener("DOMContentLoaded", function(event) {
+interact('.draggable').draggable({
   listeners: {
     start (event) {
       console.log(event.type, event.target)
@@ -20,9 +19,10 @@ sticker.draggable({
 
       event.target.style.transform =
         `translate(${position.x}px, ${position.y}px)`
-    },
+    }
   }
 })
+});
 
 
 function initFunctions() {
