@@ -7,18 +7,18 @@ import '../components/Checkin.css';
 import CheckinNav from '../components/CheckinNav';
 import interact from 'interactjs'
 
-interact('.draggable')
-  .draggable({
-    // enable inertial throwing
-    inertia: true,
-    // keep the element within the area of it's parent
-    modifiers: [
-      interact.modifiers.restrictRect({
-        restriction: 'parent',
-        endOnly: true
-      })
-    ]
-  })
+// interact('.draggable')
+//   .draggable({
+//     // enable inertial throwing
+//     inertia: true,
+//     // keep the element within the area of it's parent
+//     modifiers: [
+//       interact.modifiers.restrictRect({
+//         restriction: 'parent',
+//         endOnly: true
+//       })
+//     ]
+//   })
 
 
 function initFunctions() {
