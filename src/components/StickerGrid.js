@@ -1,6 +1,5 @@
 import React from 'react';
 import './grid.css';
-import Draggable from '@shopify/draggable';
 
 
 function close(){
