@@ -6,13 +6,18 @@
 
 // You can delete this file if you're not using it
 
-exports.onCreateWebpackConfig = ({
-  actions,
-}) => {
-  const { setWebpackConfig } = actions;
-  setWebpackConfig({
-    externals: {
-      jquery: 'jQuery', // important: 'Q' capitalized
+const ui = require("ui");
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      root: [
+        path.resolve(__dirname, '../node_modules'),
+        path.resolve(__dirname, '../src'),
+      ],
+      alias: {
+        'jquery-ui': 'jquery-ui-dist/jquery-ui.js'
+      },
+      extensions: ['', '.js', '.json'],
     }
-  })
-}
+  });
+};

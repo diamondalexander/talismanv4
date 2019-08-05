@@ -5,6 +5,12 @@ import ColorGrid from '../components/ColorGrid';
 // import StickerGrid from '../components/StickerGrid';
 import '../components/Checkin.css';
 import CheckinNav from '../components/CheckinNav';
+import $ from 'jquery';
+import 'jquery-ui';
+
+$( function() {
+  $( ".draggable" ).draggable();
+} );
 
 function initFunctions() {
   var overlay = document.getElementById('overlay');
@@ -37,15 +43,15 @@ const Checkin = () => (
     <div><p id="close" onClick={close}>X Close</p></div>
     <div id="grid-row">
       <div className="faces">
-        <img src={require('../images/stickers/faces/happy.svg')} id="happy" alt="happy face" draggable="true" />
-        <img src={require('../images/stickers/faces/anxious.svg')} id="anxious" alt="anxious face" draggable="true" />
-        <img src={require('../images/stickers/faces/angry.svg')} id="angry" alt="angry face" draggable="true" />
-        <img src={require('../images/stickers/faces/joyful.svg')} id="joyful" alt="joyful face" draggable="true" />
-        <img src={require('../images/stickers/faces/sad.svg')} id="sad" alt="sad face" draggable="true" />
-        <img src={require('../images/stickers/faces/surprised.svg')} id="suprised" alt="surprised face" draggable="true" />
-        <img src={require('../images/stickers/faces/loving.svg')} id="loving" alt="loving face" draggable="true" />
-        <img src={require('../images/stickers/faces/afraid.svg')} id="afraid" alt="afraid face" draggable="true" />
-        <img src={require('../images/stickers/faces/unhappy.svg')} id="unhappy" alt="unhappy face" draggable="true" />
+        <img src={require('../images/stickers/faces/happy.svg')} id="happy" alt="happy face" className="draggable" />
+        <img src={require('../images/stickers/faces/anxious.svg')} id="anxious" alt="anxious face" />
+        <img src={require('../images/stickers/faces/angry.svg')} id="angry" alt="angry face" />
+        <img src={require('../images/stickers/faces/joyful.svg')} id="joyful" alt="joyful face" />
+        <img src={require('../images/stickers/faces/sad.svg')} id="sad" alt="sad face" />
+        <img src={require('../images/stickers/faces/surprised.svg')} id="suprised" alt="surprised face" />
+        <img src={require('../images/stickers/faces/loving.svg')} id="loving" alt="loving face" />
+        <img src={require('../images/stickers/faces/afraid.svg')} id="afraid" alt="afraid face" />
+        <img src={require('../images/stickers/faces/unhappy.svg')} id="unhappy" alt="unhappy face" />
       </div>
     </div>
     </div>
