@@ -13,12 +13,7 @@ export default function HTML(props) {
         />
         {props.headComponents}
         <link rel="stylesheet" href="https://use.typekit.net/ypq4uvy.css" />
-        {/* <script src="https://kit.fontawesome.com/598e931411.js"></script> */}
-        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" 
-        rel="stylesheet" type="text/css" />
-        {/* <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  
-        <script src="jquery.ui.touch-punch.min.js"></script> */}
+        <script src="https://kit.fontawesome.com/598e931411.js"></script>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
