@@ -6,9 +6,10 @@ import ColorGrid from '../components/ColorGrid';
 import '../components/Checkin.css';
 import CheckinNav from '../components/CheckinNav';
 import interact from 'interactjs';
-const position = { x: 0, y: 0 }
 
-interact('.draggable').draggable({
+const sticker = interact('.draggable');
+const position = { x: 0, y: 0 }
+sticker.draggable({
   listeners: {
     start (event) {
       console.log(event.type, event.target)
