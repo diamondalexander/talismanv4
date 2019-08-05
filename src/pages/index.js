@@ -1,38 +1,38 @@
-import React from "react";
-import '../components/IndexPage.css';
-import BottomNav from "../components/BottomNav";
-import BlobShape from "../components/BlobShape";
-// import { Link } from "gatsby"
+import React from 'react';
+import BlobShape from '../components/BlobShape';
+import ShapeGrid from '../components/ShapeGrid';
+import ColorGrid from '../components/ColorGrid';
+import StickerGrid from '../components/StickerGrid';
+import '../components/Checkin.css';
+import CheckinNav from '../components/CheckinNav';
 
-// import Layout from "../components/layout"
-// import Image from "../components/image"
-// import SEO from "../components/seo"
+function initFunctions() {
+  var overlay = document.getElementById('overlay');
+  overlay.classList.add('hidden');
+}
 
-const IndexPage = () => (
+const Checkin = () => (
   <div className="app">
-    <a href="/shape">
-    <BlobShape 
-      svgstyle={{enableBackground: 'new 0 0 800 800'}}
-      filterstyle={{floodColor: '#000000', floodOpacity: '0.4'}}
-      shapestyle={{fill: '#BDBDBD', filter: 'url(#f1)'}}
-    />
-    </a>
+    <div id="overlay">
+      <div className="start-content">
+        <h1>Create your first check-in!</h1>
+        <button id="start" onClick={initFunctions}>Press to start</button>
+      </div>
+      </div>
 
-    <BottomNav 
-      icon1= {<img src={require('../images/dash.svg')} id="dash" alt="bubble chart icon" />}
-      icon2= {<img src={require('../images/checkin.svg')} alt="circle icon" />}
-      icon3= {<img src={require('../images/learn.svg')} alt="book icon"/>}
-      icon1label="Dashboard"
-      icon2label="Check In"
-      icon3label="Learn"
-      icon1link="/dashboard"
-      icon2link="/shape"
-      icon3link="/learn"
-    />
-  
-  
-  
+    <BlobShape />
+    <CheckinNav />
+    <div id="shape-grid" className="hidden">
+      <ShapeGrid />
+    </div>
+    <div id="color-grid" className="hidden">
+      <ColorGrid />
+    </div>
+    <div id="sticker-grid" className="hidden">
+      <StickerGrid />
+    </div>
   </div>
 )
 
-export default IndexPage
+
+export default Checkin;
