@@ -6,8 +6,10 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@shopify/draggable": "^1.0.0-beta.8",
+    "form-serializer": "^2.5.0",
     "gatsby": "^2.13.42",
     "gatsby-image": "^2.2.7",
+    "gatsby-plugin-mailchimp": "^5.1.2",
     "gatsby-plugin-manifest": "^2.2.4",
     "gatsby-plugin-offline": "^2.2.4",
     "gatsby-plugin-react-helmet": "^3.1.2",

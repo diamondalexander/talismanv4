@@ -5,7 +5,6 @@ import ColorGrid from '../components/ColorGrid';
 // import StickerGrid from '../components/StickerGrid';
 import '../components/Checkin.css';
 import CheckinNav from '../components/CheckinNav';
-import interact from 'interactjs';
 
 function initFunctions() {
   var overlay = document.getElementById('overlay');

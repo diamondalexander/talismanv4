@@ -30,12 +30,12 @@ nav {
   cursor: pointer;
 }
 
-#signup span {
+#signup {
   color: #3e3e3e;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
-  line-height: 18px;
+  line-height: 22px;
 }
 
 #signup i {
@@ -64,44 +64,30 @@ nav {
   margin: 10% auto;
   padding: 50px;
   border-radius: 12px;
-}
-
-#mc_embed_signup {
-  width: 100%;
-  clear: left;
-}
-
-#signup-form {
-  margin: 0 auto;
   text-align: center;
 }
 
-#loving-face {
-  display: block;
-  margin: 0 auto;
-  max-width: 200px;
-  margin-bottom: 50px;
-}
 
-#signup-header {
+#form-container h2{
   font-weight: 600;
-  color: #3e3e3e;
+  color: #405865;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
-#mc-embedded-subscribe {
+#mc-embedded-subscribe{
   background: #405865;
   color: #fff;
   border: transparent;
   border-radius: 50px;
-  display: block;
   width: 150px;
   padding: 6px 15px;
   font-weight: 600;
   text-transform: uppercase;
-  line-height: 30px;
+  line-height: 28px;
   font-size: 1rem;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 
@@ -111,12 +97,18 @@ nav {
   position: absolute;
   right: 36%;
   top: 13%;
+  cursor: pointer;
 }
 
 #content {
   display: grid;
   grid-template-columns: 30% auto;
   margin: 150px 50px 0px 80px;
+}
+
+#copy-section {
+  position: static;
+  z-index: 6;
 }
 
 #copy-section h1 {
@@ -141,7 +133,9 @@ nav {
   text-transform: uppercase;
   line-height: 30px;
   font-size: 1rem;
+  cursor: pointer;
 }
+
 
 #arrow {
   width: 70px;
@@ -170,6 +164,148 @@ nav {
 
 #gif {
   position: absolute;
+  justify-self: center;
   z-index: 1;
+  max-width: 350px;
+}
+
+@media (min-width: 1900px) {
+  #gif {
+    max-width: 450px;
+    right: 20%;
+    bottom: 9%;
+  }
+}
+
+@media (max-width: 1280px) {
+  #content {
+    margin-top: 20px;
+    grid-template-columns: 40% 60%;
+  }
+
+  #copy-section h1 {
+    font-size: 3.5rem;
+  }
+
+  #arrow {
+    bottom: 19%;
+  }
+
+  #coachmark p {
+    bottom: 18%;
+    left: 12.5%;
+  }
+
+  #gif {
+    right: 14%;
+    bottom: 4%;
+  }
+}
+
+@media (max-width: 1024px) {
+  #arrow {
+    bottom: 15%;
+  }
+
+  #coachmark p {
+    bottom: 14%;
+    left: 16%;
+  }
+}
+
+@media (max-width: 768px) {
+  #content {
+    grid-template-columns: auto;
+    grid-template-rows: 2;
+  }
+
+  #arrow {
+    bottom: 48%;
+  }
+
+  #coachmark p {
+    bottom: 47%;
+    left: 21%;
+  }
+
+  #gif {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 414px) {
+  
+  nav {
+    padding-left: 50px;
+    padding-bottom: 50px;
+    height: 50px;
+  }
+
+  #logo {
+    margin-bottom: 0px;
+  }
+
+  #signup {
+    display: none;
+  }
+  
+  #content {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    grid-template-columns: auto;
+    grid-template-rows: 2;
+  }
+
+  #copy-section {
+    grid-row: 2;
+  }
+
+  #copy-section h1 {
+    font-size: 2.7rem;
+    grid-column: 1;
+  }
+
+  #copy-section p {
+    color: #444;
+    width: 90%;
+  }
+
+  #arrow, #coachmark {
+    display: none;
+  }
+
+  #gif-section {
+    grid-template-columns: auto;
+    grid-row: 1;
+  }
+
+  #gif {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 53%;
+    left: 0;
+    right: 0;
+    width: 50%;
+  }
+}
+
+@media (max-width: 375px) {
+  
+  #content {
+    margin-right: 30px;
+  }
+
+  #copy-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  #gif {
+    top: 55%;
+    left: 0;
+    right: 0;
+    width: 50%;
+  }
 }
 
