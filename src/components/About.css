@@ -166,7 +166,7 @@ nav {
   position: absolute;
   justify-self: center;
   z-index: 1;
-  max-width: 350px;
+  max-width: 400px;
 }
 
 @media (min-width: 1900px) {

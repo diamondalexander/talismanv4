@@ -1,5 +1,6 @@
 import React from 'react';
 import '../components/About.css';
+import moodgif from '../images/mood-gif.gif';
 
 function showEmail() {
   var email = document.getElementById('mailchimp');
@@ -55,7 +56,8 @@ const AboutPage = () => (
       </div>
       <div id="gif-section">
         <img src={require('../images/swoop-big.png')} id="swoop" alt="swoop design element for background" />
-        <img src={require('../images/sunny.png')} id="gif" alt="gif animation of variety of checkins made using Talisman" />
+        {/* <img src={require('../images/sunny.png')} id="gif" alt="gif animation of variety of checkins made using Talisman" /> */}
+        <img src={moodgif} id="gif" alt="gif animation of variety of checkins made using Talisman" />
       </div>
     </section>
   
