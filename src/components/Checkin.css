@@ -61,11 +61,11 @@ body {
 
 #canvas {
   width: 768px!important;
-  min-height: 700px!important;
+  height: 500px!important;
 }
 
 #blobCanvas {
-  margin: 150px auto;
+  margin: 150px auto 50px;
   display: block;
 }
 
