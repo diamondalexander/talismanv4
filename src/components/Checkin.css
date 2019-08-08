@@ -110,14 +110,14 @@ body {
 .face {
   width: 100px;
   position: absolute;
-  left: 40%;
+  left: 38%;
   top: 30%;
 }
 
 #finished {
   margin: -80px auto 0px;
   text-align: center;
-  width: 70%;
+  width: 65%;
 }
 
 #finished h2 {
@@ -125,11 +125,18 @@ body {
   font-weight: 600;
 }
 
+#finished span {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: -10px;
+}
+
 #finished a {
-  background: #8EB5B5;
+  background: #E27B67;
   color: #fff;
   width: 200px;
   text-align: center;
   padding: 8px 16px;
   border-radius: 5px;
+  font-size: 20px;
 }

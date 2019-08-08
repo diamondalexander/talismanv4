@@ -71,7 +71,7 @@ const Checkin = () => (
       />
     </div>
     <div id="sticker-grid" className="hidden">
-    <div><p id="close" onClick={stickerClose}>X Close</p></div>
+    <div><p id="close" onClick={stickerClose}>Finish <i class="fas fa-check"></i></p></div>
     <div id="grid-row">
       <div className="faces">
         <img src={require('../images/stickers/faces/happy.svg')} id="happy" alt="happy face" onClick={happy} />
@@ -87,8 +87,8 @@ const Checkin = () => (
     </div>
     </div>
     <div id="finished" className="hidden">
-      <h2>Congrats! You've just completed your first check in.</h2>
-      <a href="https://www.talismanapp.com/checkin">Start Over</a>
+      <h2><span>Congrats!</span><br/>You've just completed your<br/>first check in.</h2>
+      <a href="/checkin">Start Over</a>
     </div>
     </div>
 )

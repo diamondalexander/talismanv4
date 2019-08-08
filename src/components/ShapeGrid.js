@@ -11,7 +11,7 @@ function close(){
 const ShapeGrid = () => (
 
   <div className="container">
-    <div><p id="close" onClick={close}>X Close</p></div>
+    <div><p id="close" onClick={close}>Next <i className="fas fa-arrow-right"></i></p></div>
     <div id="grid-row">
 
       <svg className="svgs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312.01 355.27"><path id="mood" d="M301.16,181.29c15.37,33.16,14.73,77.71-4,111-33.94,60.32-123.24,76.52-188,52C32,315.07,2.69,233,.16,176.29c-.54-12-3.43-111,69-155,37.35-22.72,95.72-31.44,127-5,24.26,20.5,9.8,43.19,38,89C261,148.85,284.45,145.23,301.16,181.29Z" style={{fill: '#bdbdbd'}}/></svg>

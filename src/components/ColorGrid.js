@@ -5,7 +5,7 @@ import './grid.css';
 const ColorGrid = (props) => (
 
   <div className="container">
-   <div><p id="close" onClick={props.close}>X Close</p></div>
+   <div><p id="close" onClick={props.close}>Next <i className="fas fa-arrow-right"></i></p></div>
     <div id="grid-row">
       <button id="swatch1" className="pots" style={{backgroundColor: '#EFE2AB'}}></button>
       <button id="swatch2" className="pots" style={{backgroundColor: '#E27B67'}}></button>

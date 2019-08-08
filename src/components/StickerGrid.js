@@ -13,7 +13,7 @@ function close(){
 
 const StickerGrid = () => (
 <div className="container">
-    <div><p id="close" onClick={close}>X Close</p></div>
+    <div><p id="close" onClick={close}>Finish <i class="fas fa-check"></i></p></div>
     <div id="grid-row">
       <div className="faces">
         <img src={require('../images/stickers/faces/happy.svg')} id="happy" alt="happy face" />
