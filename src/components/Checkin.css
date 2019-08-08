@@ -107,3 +107,9 @@ body {
   margin-top: -50px;
 }
 
+.face {
+  width: 100px;
+  position: absolute;
+  left: 40%;
+  top: 30%;
+}
