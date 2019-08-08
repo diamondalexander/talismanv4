@@ -8,7 +8,7 @@ function showEmail() {
 }
 
 function startCheckin() {
-  window.location='https://www.talismanapp.com/checkin';
+  window.location='/checkin';
 }
 
 const AboutPage = () => (

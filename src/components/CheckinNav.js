@@ -5,6 +5,10 @@ import './BottomNav.css';
 function showShapes() {
   var shapeGrid = document.getElementById('shape-grid');
   shapeGrid.classList.toggle('hidden');
+  
+  var hidePickShape = document.getElementById('pick-shape');
+  hidePickShape.classList.toggle('hidden');
+
 
   var shapes = document.getElementsByClassName('svgs');
   for (var i = 0; i < shapes.length; i++) {    
@@ -23,6 +27,9 @@ function showColors() {
   var grid = document.getElementById('color-grid');
   grid.classList.toggle('hidden');
 
+  var hidePickColor = document.getElementById('pick-color');
+  hidePickColor.classList.toggle('hidden');
+
   var swatches = document.getElementsByClassName('pots');
   for (var i = 0; i < swatches.length; i++) {    
       swatches[i].addEventListener('click', ((j) => {         
@@ -38,6 +45,9 @@ function showColors() {
 function showStickers() {
   var grid = document.getElementById('sticker-grid');
   grid.classList.toggle('hidden');
+
+  var hidePickSticker = document.getElementById('pick-sticker');
+  hidePickSticker.classList.toggle('hidden');
 
   var swatches = document.getElementsByClassName('pots');
   for (var i = 0; i < swatches.length; i++) {    

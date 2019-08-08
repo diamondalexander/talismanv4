@@ -4,6 +4,8 @@ import './grid.css';
 function close(){
   var shapeGrid = document.getElementById('shape-grid');
   shapeGrid.classList.toggle('hidden');
+  var showPickColor = document.getElementById('pick-color');
+  showPickColor.classList.toggle('hidden');
 }
 
 const ShapeGrid = () => (

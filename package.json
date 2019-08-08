@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@shopify/draggable": "^1.0.0-beta.8",
+    "canvg": "^1.5.3",
     "form-serializer": "^2.5.0",
     "gatsby": "^2.13.42",
     "gatsby-image": "^2.2.7",

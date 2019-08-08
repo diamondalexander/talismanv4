@@ -58,3 +58,34 @@ body {
   touch-action: none;
   user-select: none;
 }
+
+.tooltip1 {
+  background: #8EB5B5;
+  color: #fff;
+  width: 200px;
+  text-align: center;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-left: 5%;
+}
+
+.tooltip2 {
+  background: #8EB5B5;
+  color: #fff;
+  width: 200px;
+  text-align: center;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-left: 37%;
+}
+
+.tooltip3 {
+  background: #8EB5B5;
+  color: #fff;
+  width: 200px;
+  text-align: center;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-left: 67%;
+}
+

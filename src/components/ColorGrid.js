@@ -1,15 +1,11 @@
 import React from 'react';
 import './grid.css';
 
-function close(){
-  var colorGrid = document.getElementById('color-grid');
-  colorGrid.classList.toggle('hidden');
-}
 
-const ColorGrid = () => (
+const ColorGrid = (props) => (
 
   <div className="container">
-   <div><p id="close" onClick={close}>X Close</p></div>
+   <div><p id="close" onClick={props.close}>X Close</p></div>
     <div id="grid-row">
       <button id="swatch1" className="pots" style={{backgroundColor: '#EFE2AB'}}></button>
       <button id="swatch2" className="pots" style={{backgroundColor: '#E27B67'}}></button>
