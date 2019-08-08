@@ -63,7 +63,7 @@ function showStickers() {
 
 
 const CheckinNav = (props) => (
-  <div className="nav-container">
+  <div className="nav-container" id="nav">
     <div className="icons-container" id="ci-controls">
       <div className="icon" onClick={showShapes} id="shape">
         <img src={require('../images/shape.svg')} alt="circle icon for shape options" />

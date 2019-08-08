@@ -5,6 +5,10 @@ import './grid.css';
 function close(){
   var stickerGrid = document.getElementById('sticker-grid');
   stickerGrid.classList.toggle('hidden');
+  var hideNav = document.getElementById('nav');
+  hideNav.classList.add('hidden');
+  var showFinish = document.getElementById('finished');
+  showFinish.classList.toggle('hidden');
 }
 
 const StickerGrid = () => (

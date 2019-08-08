@@ -27,9 +27,13 @@ function colorClose(){
   canvg(document.getElementById('blobCanvas'), svgPath)
 }
 
-function close(){
+function stickerClose(){
   var stickerGrid = document.getElementById('sticker-grid');
   stickerGrid.classList.toggle('hidden');
+  var hideNav = document.getElementById('nav');
+  hideNav.classList.add('hidden');
+  var showFinish = document.getElementById('finished');
+  showFinish.classList.toggle('hidden');
 }
 
 
@@ -67,7 +71,7 @@ const Checkin = () => (
       />
     </div>
     <div id="sticker-grid" className="hidden">
-    <div><p id="close" onClick={close}>X Close</p></div>
+    <div><p id="close" onClick={stickerClose}>X Close</p></div>
     <div id="grid-row">
       <div className="faces">
         <img src={require('../images/stickers/faces/happy.svg')} id="happy" alt="happy face" onClick={happy} />
@@ -81,6 +85,10 @@ const Checkin = () => (
         <img src={require('../images/stickers/faces/unhappy.svg')} id="unhappy" alt="unhappy face" onClick={unhappy} />
       </div>
     </div>
+    </div>
+    <div id="finished" className="hidden">
+      <h2>Congrats! You've just completed your first check in.</h2>
+      <a href="https://www.talismanapp.com/checkin">Start Over</a>
     </div>
     </div>
 )
