@@ -59,6 +59,21 @@ body {
   user-select: none;
 }
 
+#canvas {
+  width: 768px!important;
+  min-height: 700px!important;
+}
+
+#blobCanvas {
+  margin: 150px auto;
+  display: block;
+}
+
+#mood {
+  margin: 0 auto;
+  display: block;
+}
+
 .tooltip1 {
   background: #8EB5B5;
   color: #fff;
@@ -67,6 +82,7 @@ body {
   padding: 8px 16px;
   border-radius: 5px;
   margin-left: 5%;
+  margin-top: -50px;
 }
 
 .tooltip2 {
@@ -77,6 +93,7 @@ body {
   padding: 8px 16px;
   border-radius: 5px;
   margin-left: 37%;
+  margin-top: -50px;
 }
 
 .tooltip3 {
@@ -87,5 +104,6 @@ body {
   padding: 8px 16px;
   border-radius: 5px;
   margin-left: 67%;
+  margin-top: -50px;
 }
 

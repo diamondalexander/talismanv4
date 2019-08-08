@@ -22,9 +22,9 @@ function colorClose(){
   var svgPath = document.getElementById('blob-shape').outerHTML;
   console.log(svgPath);
   document.getElementById('svg-container').classList.add('hidden');
-  document.getElementById('blobCanvas').classList.toggle('hidden');
+  document.getElementById('canvas').classList.toggle('hidden');
   
- 
+  canvg(document.getElementById('blobCanvas'), svgPath)
 
   // var el = document.createElement('svg');
   // el.appendChild(document.createTextNode(svgPath));
@@ -33,8 +33,6 @@ function colorClose(){
   // tmp.appendChild(el);
   // console.log(tmp.innerHTML);
   // var newSVG = tmp.innerHTML;
-
-  canvg(document.getElementById('blobCanvas'), svgPath)
 
 }
 
@@ -47,7 +45,7 @@ const Checkin = () => (
         <button id="start" onClick={initFunctions}>Press to start</button>
       </div>
       </div>
-    <canvas id="blobCanvas" className="hidden" style={{width: '768px', minHeight: '700px'}}></canvas>
+      <div id="canvas" className="hidden"><canvas id="blobCanvas"></canvas></div>
     <BlobShape />
     <div><p id="pick-shape" className="hidden tooltip1"><strong>01</strong><br/>Choose a shape</p></div>
     <div><p id="pick-color" className="hidden tooltip2"><strong>02</strong><br/>Choose a color</p></div>
