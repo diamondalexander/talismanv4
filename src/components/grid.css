@@ -51,9 +51,9 @@
 }
 
 #close {
-  font-size: 12px;
+  font-size: 16px;
   position: absolute;
-  left: 590px;
+  left: 580px;
   top: 660px;
   color: #777;
   font-family: canada-type-gibson,sans-serif;
